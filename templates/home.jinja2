@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Static files-->
+    <link rel="stylesheet" href="{{ request.static_url('__main__:static/css/app.css') }}"/>
+
+    <title>Home</title>
+
+</head>
+
+<body>
+    <div id="container">
+        <a href="#" id="uploadBtn">Upload CSV File</a>
+        <a href="#" id="fetchBtn">Fetch From API</a>
+        <form id="uploadCSVContainer" action="/" method="POST" accept-charset="utf-8" enctype="multipart/form-data"">
+            <label for="uploadSCV">Upload the CSV file</label>
+            <input type="file" name="CSVfile" id="uploadCSV">
+            <button id="checkUploadedCSV">Check</button>
+        </form>
+        <div id="fetchCSVContainer">
+            <p class="note">Note: Since there is no API to fetch the desire CSV file, the file is generated randomly.
+            </p>
+            <a href="/result-of-distribution/random" id="checkRandomCSV">Check</a>
+        </div>
+    </div>
+
+    <script>
+        const body = document.body;
+
+        const container = document.querySelector("#container")
+
+        const uploadBtn = document.querySelector("#uploadBtn");
+        const fetchBtn = document.querySelector("#fetchBtn");
+
+        const uploadCSVContainer = document.querySelector("#uploadCSVContainer");
+        const fetchCSVContainer = document.querySelector("#fetchCSVContainer");
+
+        uploadBtn.addEventListener("click", () => {
+            uploadBtn.style.display = "none";
+            fetchBtn.style.display = "none";
+
+            fetchCSVContainer.style.display = "none";
+
+            uploadCSVContainer.style.display = "block";
+        })
+
+        fetchBtn.addEventListener("click", () => {
+            uploadBtn.style.display = "none";
+            fetchBtn.style.display = "none";
+
+            uploadCSVContainer.style.display = "none";
+
+            fetchCSVContainer.style.display = "block";
+        })
+    </script>
+</body>
+
+</html>
