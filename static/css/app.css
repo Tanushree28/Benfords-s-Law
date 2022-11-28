@@ -13,7 +13,8 @@ body {
     background-color: #FFD384;
     height: 97vh;
 }
-
+h{text-align: center;
+margin-top: 20%}
 
 #container {
     border-radius: 5px;
@@ -24,6 +25,8 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 20%;
+    margin-right: 20%;
 }
 
 a {
