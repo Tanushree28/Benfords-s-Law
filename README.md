@@ -1,1 +1,1 @@
-# Brenfords-s-Law-
+# Brenford's-Law-
