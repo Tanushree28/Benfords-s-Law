@@ -1,0 +1,25 @@
+chardet==5.0.0
+hupper==1.10.2
+Jinja2==3.1.2
+lml==0.1.0
+Mako==1.2.4
+MarkupSafe==2.1.1
+PasteDeploy @ file:///home/conda/feedstock_root/build_artifacts/pastedeploy_1666058859837/work
+plaster==1.0
+plaster-pastedeploy==0.7
+pyexcel==0.7.0
+pyexcel-io==0.6.6
+pyexcel-webio==0.1.4
+Pygments==2.13.0
+pyramid @ file:///home/conda/feedstock_root/build_artifacts/pyramid_1614961227743/work
+pyramid-debugtoolbar==4.9
+pyramid-excel==0.0.5
+pyramid-jinja2==2.10
+pyramid-mako==1.1.0
+repoze.lru==0.7
+texttable==1.6.7
+translationstring @ file:///home/conda/feedstock_root/build_artifacts/translationstring_1597433533383/work
+venusian==3.0.0
+WebOb @ file:///home/conda/feedstock_root/build_artifacts/webob_1616868127778/work
+zope.deprecation==4.4.0
+zope.interface @ file:///D:/bld/zope.interface_1668715522196/work
